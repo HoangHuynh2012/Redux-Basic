@@ -81,6 +81,7 @@ const ToDoList = () => {
       </TouchableOpacity>
       <FlatList
         data={list}
+        removeClippedSubviews={true}
         renderItem={renderItem}
         keyExtractor={item => item?.id}
         extraData={selectedId}
